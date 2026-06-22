@@ -1,4 +1,4 @@
-describe('ServeRest API Automation - Users Endpoint', () => {
+describe('GET /usuarios', () => {
 
   it('Should successfully list all registered users', () => {
     cy.request({
@@ -11,5 +11,7 @@ describe('ServeRest API Automation - Users Endpoint', () => {
       
       expect(response.body.usuarios).to.be.an('array');
     });
+
     });
+
 });
